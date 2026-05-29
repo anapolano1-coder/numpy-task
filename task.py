@@ -4,14 +4,19 @@ import numpy as np
 
 def prodotto_scalare(v1: list, v2: list) -> float:
     """Sub-task 1: Prodotto Scalare."""
-    pass
+    np.dot(v1, v2)
+    return
 
 def rango_matrice(m: list) -> int:
     """Sub-task 2: Calcola il rango di una matrice."""
-    pass
+    matrice=np.array(m)
+    rank = np.linalg.matrix_rank(matrice)
+    return rank
+
 
 def risolvi_sistema_lineare(A: list, b: list) -> np.ndarray:
     """Sub-task 3: Risolvere un Sistema Lineare."""
+
     pass
 
 def correlazione_matrici(m1: list, m2: list) -> np.ndarray:
