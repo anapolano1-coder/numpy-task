@@ -21,7 +21,9 @@ def risolvi_sistema_lineare(A: list, b: list) -> np.ndarray:
 
 def correlazione_matrici(m1: list, m2: list) -> np.ndarray:
     """Sub-task 4: Correlazione tra Matrici 2x2."""
-    pass
+    correlazioni = np.corrcoef(m1,m2)
+    return correlazioni
+
 
 def operazioni_elemento_per_elemento(v1: list) -> tuple:
     """Sub-task 5: Restituisce (seno, coseno, arcoseno, arcocoseno) elemento per elemento calcolati sul primo array."""
